@@ -1,0 +1,18 @@
+# Python bytecode and temporary files
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+*~
+*.bak
+
+# Temporary files created during the testing setup
+.pytest_cache/
+.coverage
+
+# Files created by pip install -e .
+*.egg-info/
+
+# Python Virtual Environments
+myenv/
+.vscode/
