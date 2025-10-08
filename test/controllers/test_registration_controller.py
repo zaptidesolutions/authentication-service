@@ -2,7 +2,7 @@ from unittest.mock import AsyncMock, Mock, patch
 from fastapi import FastAPI
 from fastapi.testclient import TestClient
 
-from src.controllers.registration_controller import router as reg_router
+from controllers.registration_controller import router as reg_router
 
 app = FastAPI()
 app.include_router(reg_router)

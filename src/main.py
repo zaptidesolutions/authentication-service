@@ -9,7 +9,7 @@ api.include_router(auth_router)
 api.include_router(reg_router)
 
 
-from src.events import start_up  # Ensure startup events are registered
+from events import start_up  # Ensure startup events are registered
 
 @api.on_event("startup")
 async def startup_event():
