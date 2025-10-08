@@ -5,7 +5,7 @@ from datetime import datetime, timedelta
 from typing import Optional
 
 # Import Config and DB
-from src.config.config_setup import (
+from config.config_setup import (
     SECRET_KEY,
     ALGORITHM,
     auth_db,

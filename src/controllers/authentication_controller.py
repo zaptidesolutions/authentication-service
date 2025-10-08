@@ -1,4 +1,4 @@
-from src.service.auth_service import (
+from service.auth_service import (
     authenticate_user,
     blacklist_token,
     create_token,
@@ -8,9 +8,9 @@ from src.service.auth_service import (
 from fastapi import Depends, HTTPException
 from fastapi.security import OAuth2PasswordRequestForm
 from datetime import timedelta
-from src.model.Token import Token
-from src.model.RefreshRequest import RefreshRequest
-from src.config.config_setup import (
+from model.Token import Token
+from model.RefreshRequest import RefreshRequest
+from config.config_setup import (
     ACCESS_TOKEN_EXPIRE_MINUTES,
     REFRESH_TOKEN_EXPIRE_DAYS
 )
