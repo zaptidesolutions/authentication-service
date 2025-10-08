@@ -46,7 +46,7 @@ async def test_authenticate_user_failure(monkeypatch):
 @pytest.mark.asyncio
 async def test_save_refresh_token():
     mock_refresh = AsyncMock()
-    with patch("authentication.service.auth_service.refresh_collection", new=mock_refresh):
+    with patch("service.auth_service.refresh_collection", new=mock_refresh):
         await auth_service.save_refresh_token("alice", "token")
         mock_refresh.update_one.assert_awaited_once()
 

@@ -1,5 +1,5 @@
 from passlib.context import CryptContext
-from src.config.config_setup import auth_db
+from config.config_setup import auth_db
 
 # ---------------- Security Setup ----------------
 pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")

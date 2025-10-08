@@ -1,6 +1,6 @@
 from fastapi import APIRouter, HTTPException, Body
-from src.service.auth_service import pwd_context, users_collection
-from src.model.RegisterRequest import RegisterRequest
+from service.auth_service import pwd_context, users_collection
+from model.RegisterRequest import RegisterRequest
 
 router = APIRouter()
 
